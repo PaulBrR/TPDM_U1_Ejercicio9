@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -10,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Numero a multiplicar"
-        android:textSize="20dp"/>
+        android:textSize="20dp" />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,11 +20,20 @@
         android:hint="Inserte valor"
         android:id="@+id/numeromu"
         />
-    <Spinner
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
-    <Button
+        android:text="Calcular hasta"
+        android:textSize="20dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="inserte valor"
+        android:id="@+id/numerodo"/>
+
+
+        <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CALCULAR"
